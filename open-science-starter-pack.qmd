@@ -54,6 +54,34 @@ scale_colour_discrete <- scale_colour_viridis_d
 scale_fill_discrete <- scale_fill_viridis_d
 ```
 
+## Materials
+
+The materials will be available on the WS website/repository. But you can access the slides and the materials at:
+
+<center> [github.com/stat-teaching/open-science-starter-pack](https://github.com/stat-teaching/open-science-starter-pack) </center>
+
+</br>
+</br>
+</br>
+
+<center>
+{{< qrcode https://github.com/stat-teaching/open-science-starter-pack >}}
+</center>
+
+## About me...
+
+:::{.nonincremental}
+- I am a **post-doctoral researcher in Psychometrics** and a Clinical Psychologist at the Department of Developmental Psychology and Socialization, University of Padova
+- My research interests are **meta-analysis**, **statistical methods for replicability**, **Monte Carlo simulations for power analysis** and **R programming**.
+- I did a PhD in Experimental Psychology about neural correlates of unconscious processing
+:::
+
+<center>
+If you want to know more about my work check my website [filippogambarota.github.io](https://filippogambarota.github.io)
+</center
+
+</br>
+
 # Doing research is hard...
 
 ## Doing research is hard...
@@ -980,3 +1008,5 @@ In general, I highly suggest the online book **The Open Science Manual** [https:
 <iframe src='https://arca-dpss.github.io/manual-open-science/' style='width:1000px; height:500px;'></iframe>
 
 </center>
+
+## References {.refs}
