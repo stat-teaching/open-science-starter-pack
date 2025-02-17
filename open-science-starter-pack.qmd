@@ -655,6 +655,7 @@ dat |>
 ## Something crazy in the `tidyverse`
 
 ```{r}
+#| echo: true
 dat |> 
   mutate(removed = names(data)) |> 
   mutate(fit = map(data, fit_model),
@@ -694,10 +695,10 @@ dat |>
   xlab("Removed")
 ```
 
-
 ## Quick tables
 
 ```{r}
+#| echo: true
 gtsummary::tbl_summary(iris)
 ```
 
@@ -717,6 +718,59 @@ sjPlot::tab_model(fit)
 
 gtsummary::tbl_regression(fit)
 ```
+
+# Tips on writing good R code
+
+## The `tidyverse` style guide
+
+It's a series of best practices and suggestion to create consistent and readable R code.
+
+![[http://style.tidyverse.org/](http://style.tidyverse.org/)](img/tidyverse-style-guide.png)
+
+## What is good (R) code
+
+- organized scripts
+- commenting and documenting
+- consistent and self-explanatory variables and functions naming
+
+## Organized scripts
+
+. . .
+
+Global operations at the beginning of the script:
+
+- loading datasets
+- loading packages
+- changing general options (`options()`)
+
+. . .
+
+```r
+# packages
+library(tidyverse)
+library(lme4)
+
+# options
+
+options(scipen = 999)
+
+# loading data
+dat <- read.csv(...)
+```
+
+## Functions to avoid repetition
+
+Avoid repeating the same operation multiple times in the script. The rule is, if you are doing the same operation more than two times, write a function.
+
+A function can be re-used, tested and changed just one time affecting the whole project.
+
+## Comments, comments and comments...
+
+Write the code for your future self and for others, not for yourself right now.
+
+Try to open a (not well documented) old coding project after a couple of years and you will understand :)
+
+Invest time in writing more comprehensible and documented code for you and others.
 
 # Literate Programming {.section}
 
